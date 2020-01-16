@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activities.AddCourseDetailsActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/parent_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            tools:context=".Activities.AddCourseDetailsActivity">
+
+
+            <EditText
+                android:id="@+id/courseTitle"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="49dp"
+                android:autofillHints=""
+                android:background="@android:color/darker_gray"
+                android:hint="@string/course_title"
+                android:inputType=""
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/courseTeacher"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="49dp"
+                android:autofillHints=""
+                android:background="@android:color/darker_gray"
+                android:hint="@string/course_teacher_name"
+                android:inputType=""
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/courseSection"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="50dp"
+                android:autofillHints=""
+                android:background="@android:color/darker_gray"
+                android:hint="@string/course_section"
+                android:inputType="number"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/addClassLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:autoLink="none"
+                android:gravity="center"
+                android:onClick="addClass"
+                android:text="Add Class"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="231dp"
+                android:layout_height="73dp"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/proceed_further"
+                android:textColor="#000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
